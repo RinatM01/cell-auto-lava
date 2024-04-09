@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8" />
+		<title>Magma</title>
+		<link
+			rel="icon"
+			href="/favicon.svg" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--script src="//cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.min.js"></script-->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/pixi.js/1.5.3/pixi.js"></script>
+		<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+
+		<script src="./dist/cellauto.js"></script>
+		<script src="./dist/examples.js"></script>
+		<script src="./render.js"></script>
+	</head>
+	<body style="position: relative; overflow: hidden">
+		<div style="display: flex; width: 100vw">
+			<canvas id="myCanvas"></canvas>
+
+			<div
+				style="
+					height: 100vh;
+					min-width: 20%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					background-color: rgb(62, 8, 8);
+					flex-grow: 1;
+				">
+				<div
+					title="Animation frames per step"
+					style="
+						background-color: rgb(249, 180, 168);
+						padding-left: 1rem;
+						border-radius: 1rem;
+						margin-bottom: 2rem;
+					">
+					<span class="glyphicon glyphicon-time"></span>&nbsp;<input
+						id="numFrames"
+						type="number"
+						value="3"
+						min="1"
+						style="
+							width: 60px;
+							background-color: rgb(249, 180, 168);
+							border: none;
+							padding: 1rem;
+							font-size: large;
+							border-radius: 1rem;
+						" />
+				</div>
+				<button
+					id="btnReloadExample"
+					class="lava-btn">
+					Reload
+				</button>
+			</div>
+		</div>
+
+		<div
+			class="row"
+			style="display: none">
+			<div class="col-md-2"></div>
+			<div
+				class="col-md-8"
+				contenteditable>
+				<pre
+					id="exampleCode"
+					class="prettyprint lang-js"></pre>
+			</div>
+		</div>
+
+		<!-- /container -->
+
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>

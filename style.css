@@ -1,0 +1,23 @@
+a.exampleLink {
+	cursor: pointer;
+}
+
+body {
+	-webkit-tab-size: 3;
+	-moz-tab-size: 3;
+	-ms-tab-size: 3;
+	-o-tab-size: 3;
+	tab-size: 3;
+}
+
+.lava-btn {
+	padding: 1rem 2rem;
+	font-size: medium;
+	background-color: rgb(137, 74, 74);
+	border: none;
+	color: white;
+    border-radius: 1rem;
+
+.lava-btn:hover {
+	background-color: rgb(137, 84, 84);
+}
